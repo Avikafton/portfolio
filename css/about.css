@@ -1,0 +1,234 @@
+/* OM MIG / ABOUT */
+
+.instagram-label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.instagram-label h2 {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #333;
+}
+
+/* BILLEDE OG KNAP-CONTAINER */
+.intro-media {
+    margin-top: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* INSTAGRAM-BILLEDE */
+.intro-image {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+
+.show-content-btn {
+    font-family: 'Winkysans', sans-serif;
+    background-color: #ff50a8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    padding: 12px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.show-content-btn:hover {
+    transform: translateY(-2px);
+}
+
+#close-content-btn {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.instagram-header {
+    text-align: center;
+    padding: 40px 20px;
+    color: black;
+}
+
+.instagram-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.instagram-profilbillede img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    object-position: center 80%;
+    border-radius: 50%;
+    border: 3px solid black;
+    margin-bottom: 10px;
+}
+
+.instagram-header h2 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 24px;
+    margin: 10px 0;
+    color: black;
+}
+
+.profil-knapper {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.profil-knapper div {
+    font-size: 14px;
+    color: #ff50a8;
+}
+
+.profil-bio {
+    margin-top: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.knapper {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.knapper button {
+    padding: 8px 16px;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.knapper button:hover {
+    background: #ff50a8;
+    color: #000;
+}
+
+.knapper a {
+    padding: 8px 16px;
+    border: 2px solid black;
+    background: transparent;
+    color: black;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: small;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.knapper a:hover {
+    background: #ff50a8;
+    color: #000;
+}
+
+.galleri {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 100px;
+}
+
+.like-container {
+    aspect-ratio: 1 / 1;
+    perspective: 1000px;
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    cursor: pointer;
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.like-container.flipped .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border: 2.5px solid black;
+    border-radius: 6px;
+}
+
+.flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.flip-card-back {
+    background-color: white;
+    color: black;
+    transform: rotateY(180deg);
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+.Portfolio {
+    text-decoration: none;
+    color: #000;
+    font-family: 'Orbitron', sans-serif;
+    font-size: 20px;
+}
+
+
+/* MOBILVERSION */
+@media (max-width: 768px) {
+  
+    .folder-intro p {
+        text-align: left;
+    }
+
+    .galleri {
+        grid-template-columns: 1fr;
+        gap: 15px;
+        max-width: 100%;
+        margin-bottom: 50px;
+        padding: 0 10px;
+    }
+
+    .like-container {
+        max-width: 100%;
+    }
+
+    .flip-card-back p {
+        font-size: 16px;
+        padding: 8px;
+    }
+}

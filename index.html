@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Forside</title>
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/index.css" />
+
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/android-chrome-192x192.png" color="#000000">
+
+  <script src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs" type="module"></script>
+</head>
+
+<body>
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/signature.png" alt="Mit logo" />
+      </a>
+    </div>
+    <div class="burger" id="burger">☰</div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html">Forside</a></li>
+      <li><a href="about.html">Om mig</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <h1>Min digitale verden</h1>
+  <p class="folder-intro">Velkommen til mit interaktive portfolio-site! Her får du indblik i mit arbejde og min udvikling som multimediedesignerstuderende samt de forskellige tematikker, vi på uddannelsens første semester har arbejdet med.<br><br>
+  På denne side vises fire udvalgte grafiske værker, en integreret lottie-animation, alt sammen noget, jeg selv har produceret, samt fire interaktive app-komponenter, som hver tilbyder forskellig funktionalitet ved klik.<br><br>
+  Tag et kig rundt på siden - eller hop direkte til mit portfolio via knappen herunder.<br><br>
+  <a href="portfolio.html" class="btn-portfolio">Portfolio</a>
+</p>
+
+<div class="dashboard">
+  <section class="widgets">
+    <div class="widget image">
+      <dotlottie-player 
+        class="hero-lottie"
+        src="https://lottie.host/3c555c0c-e0fa-4996-90d1-3980e4c74634/AXpFFVhUjW.lottie" 
+        background="transparent" 
+        speed="1" 
+        loop 
+        autoplay>
+      </dotlottie-player>
+    </div>
+
+ <div class="widget image2">
+  <img src="img/usb.png" alt="USB-stik">
+ </div>
+
+ <div class="widget image wide">
+  <img src="img/mus.png" alt="Computer-mus">
+ </div>
+    
+ <div class="widget image large">
+  <img src="img/airpods.png" alt="Airpods">
+ </div>
+</section>
+
+<section class="apps">
+  <div class="app indstillinger">
+    <img src="img/indstillinger.png" alt="indstillinger"><span>Indstillinger</span>
+  </div>
+
+  <div class="app external-link" data-link="https://www.facebook.com/aviaja.kafton/">
+    <img src="img/facebook.png" alt="facebook"><span>Facebook</span>
+  </div>
+    
+  <div class="app external-link" data-link="https://www.instagram.com/avikafton/">
+    <img src="img/instagram.png" alt="instagram"><span>Instagram</span>
+  </div>
+
+  <div class="app musik" id="musicApp">
+    <img id="musicIcon" src="img/alarm.png" alt="musik"><span>Alarm</span>
+  </div>
+     
+  <div class="widget image3">
+   <img src="img/esc.png" alt="ESC">
+  </div>
+   <a href="about.html" class="custom-btn">Om mig</a>
+</section>
+</div>
+</main>
+
+<footer class="site-footer portfolio-footer">
+
+  <ul class="social-links">
+    <li><a href="https://www.instagram.com/avikafton/" target="_blank" rel="noopener noreferrer"><img src="img/footerig.png" alt="Instagram" /></a></li>
+    <li><a href="https://www.facebook.com/aviaja.kafton/" target="_blank" rel="noopener noreferrer"><img src="img/footerfb.png" alt="Facebook" /></a></li>
+    <li><a href="https://dk.linkedin.com/in/aviaja-kafton-7354b324b" target="_blank" rel="noopener noreferrer"><img src="img/footerin.png" alt="LinkedIn" /></a></li>
+  </ul>
+</footer> 
+
+<audio id="hoverSound" src="img/bedside-clock-alarm-95792.mp3" preload="auto"></audio>
+
+<div id="overlay">
+  <button id="turnOnBtn">TÆND LYSET</button>
+</div>
+
+<div class="popup" id="link-popup" role="dialog" aria-labelledby="popup-heading">
+  <div class="popup-box">
+    <p id="popup-heading">Vil du åbne dette link i en ny fane?</p>
+    <button id="confirm-open">Åbn</button>
+    <button id="cancel-open">Fortryd</button>
+  </div>
+</div>
+
+<script src="js/index.js" defer></script>
+</body>
+</html>

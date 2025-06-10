@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="css/general.css" />
+  <link rel="stylesheet" href="css/portfolio.css" />
+
+  <link rel="icon" type="image/x-icon" href="img/favicon/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="img/favicon/site.webmanifest">
+  <link rel="mask-icon" href="img/favicon/android-chrome-192x192.png" color="#000000">
+
+</head>
+<body>
+
+<header>
+  <nav class="navbar">
+    <div class="logo">
+      <a href="index.html">
+        <img src="img/signature.png" alt="Mit logo" />
+      </a>
+    </div>
+    <div class="burger" id="burger">☰</div>
+    <ul class="nav-links" id="nav-links">
+  <li><a href="index.html">Forside</a></li>
+  <li><a href="about.html">Om mig</a></li>
+  <li><a href="portfolio.html">Portfolio</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<h1>Portfolio</h1>
+<div class="lampe-toggle-wrapper">
+  <p class="folder-intro">
+    Denne side er mit portfolio, og her får du direkte adgang til mit digitale skrivebord, hvor du kan trykke rundt på mine forskellige mapper.<br><br>
+    Hver mappe repræsenterer et tema, vi har arbejdet med på uddannelsens første semester og indeholder links til øvrige sider, jeg har kodet.<br><br>
+    Hold musen over de forskellige apps i dockpanelet for at se applikationsnavnet, samt hvad jeg har brugt dem til.<br><br> 
+    Skub knappen til <strong>“On”</strong> for at tænde min desktop og gå på opdagelse.
+  </p>
+<div class="lampe-label">Off / On</div>
+  <label class="switch">
+      <input type="checkbox" id="lamp-toggle" />
+      <span class="slider"></span>
+  </label>
+</div>
+
+
+<div id="desktopFrame" class="desktop-frame">
+  <div class="folder" data-popup="popup1">
+    <div class="folder-icon"></div>
+     <div class="folder-label">Tema 1 - Introuge</div>
+ </div>
+  
+<div class="folder" data-popup="popup2">
+    <div class="folder-icon"></div>
+    <div class="folder-label">Tema 2 - Grundlæggende web</div>
+ </div>
+
+<div class="folder" data-popup="popup3">
+    <div class="folder-icon"></div>
+    <div class="folder-label">Tema 3 - Grundlæggende UX/UI</div>
+ </div>
+  
+<div class="folder" data-popup="popup4">
+    <div class="folder-icon"></div>
+    <div class="folder-label">Tema 4 - Grundlæggende animation</div>
+ </div>
+ 
+<div class="folder" data-popup="popup5">
+    <div class="folder-icon"></div>
+    <div class="folder-label">Tema 5 - Grundlæggende indhold</div>
+ </div>
+</div>
+
+
+
+<div class="popup-overlay hidden" id="popup1">
+  <div class="document-popup">
+    <button class="close-popup">×</button>
+      <h2>Tema 1 – Introuge</h2><br>
+      <p>I introugen startede vi med at præsentere os selv for holdet via et kort, vi hver især havde designet i Figma. Senere på ugen planlagde og udførte vi en introduktionsvideo i grupper.</p><br>
+    <ul>
+      <li>I grupperne drøftede vi idéer til vores titel-sekvens til introvideoen.</li><br>
+      <li>Individuelt lavede vi et udkast til storyboard, skudliste og en handlingsbeskrivelse.</li><br>
+      <li>Vi præsenterede herefter vores forskellige udkast for hinanden.</li><br>
+      <li>Undervejs i processen sammensatte vi idéerne og producerede et fælles storyboard.</li><br>
+      <li>Til sidst planlagde og gennemførte vi optagelsesdagen og redigeringen af introvideoen, som vi fremviste for resten af holdet.</li><br>
+     </ul>
+      <p>Under ugen oprettede vi desuden en konto på one.com, vi fik domæne og blev introduceret til uddannelsens opbygning og studiestartsprøven.</p>
+      <a href="https://youtu.be/oU6HpdcEovg" target="_blank" class="video-link">
+        <img src="img/titelsekvens.webp" alt="Tema 1" />
+        <span class="play-button">▶</span>
+      </a>
+  </div>
+</div>
+
+
+<div class="popup-overlay hidden" id="popup2">
+  <div class="document-popup">
+    <button class="close-popup">×</button>
+      <h2>Tema 2 – Grundlæggende web</h2><br>
+      <p>Her blev vi introduceret for html, css, responsivt design samt grundlæggende webstruktur.</p><br>
+      <p>Vi lærte at lave forskellige typer links: både til undersider, eksterne hjemmesider og til steder på samme side.<br><br>
+       Vi lærte at benytte validator.w3.org til online validering ved at indtaste vores projekters URL’er efter upload til domænet.<br><br>
+       Derudover lavede vi mange HTML-øvelser og blev introduceret til CSS for at style vores websites.<br><br>
+       Vi arbejdede også med designprincipper, uploadede vores sites til domænet, lavede designøvelser i Figma og oprettede konti i GitHub.</p><br>
+       <a href="https://silenciocreative.dk/Website/index.html" target="_blank" class="Mobilsite">
+        <img src="img/mobilsite.png" alt="Mobilsite" class="mobilsite-img">
+        Åbn computersite
+      </a>
+   </div>
+</div>
+
+<div class="popup-overlay hidden" id="popup3">
+  <div class="document-popup">
+    <button class="close-popup">×</button>
+      <h2>Tema 3 – Grundlæggende UX/UI</h2><br>
+      <p>I dette tema var fokus primært på brugeroplevelse, wireframes og designprincipper.
+        Projektet strakte sig over fire uger og bestod af fem centrale dele:<br><br>
+        Først skulle vi lave grundig research og finde en idé til sitet, som både skulle være interessant for os og give værdi for brugeren.
+        Her samlede vi tekster, billeder og udviklede et første udkast til vores løsning, som vi også testede.<br><br>
+        Dernæst arbejdede vi i Figma med at lave en digital, klikbar prototype.
+        Den skulle afspejle vores idé og designvalg og kunne testes af brugere, så vi kunne få feedback.<br><br>
+        Efter prototypen gik vi i gang med at kode selve sitet i HTML, CSS og JavaScript.
+        Det skulle være en funktionsdygtig version med mindst tre sider, og det var vigtigt, at sitet fungerede både på mobil og desktop med et responsivt design.<br><br>
+        Vi brugte blandt andet webfonte og favicon, og vi lærte at validere vores kode, så den var fejlfri.<br><br>
+        Til sidst forberedte vi en kort præsentation, hvor vi fortalte om vores arbejdsproces, viste vores løsning og modtog feedback.<br><br>
+        Samtidig dokumenterede vi hele forløbet i Figma, så vi kunne reflektere over, hvad vi havde lært.<br><br>
+        Grundlæggende lærte vi, hvordan man går fra idé til færdigt website, både i design og udvikling.</p>
+        <a href="https://silenciocreative.dk/OCD" target="_blank" class="Mobilsite">
+          <img src="img/OCD.webp" alt="OCD-site thumbnail" class="mobilsite-img">
+          Åbn OCD-site
+        </a>
+  </div>
+</div>
+
+
+<div class="popup-overlay hidden" id="popup4">
+  <div class="document-popup">
+    <button class="close-popup">×</button>
+      <h2>Tema 4 – Grundlæggende animation</h2><br>
+      <p>I dette tema dykkede vi ned i animationer og mere avancerede webteknikker, som JavaScript og SVG-grafik.<br><br>
+        Vi startede med at arbejde med papir-prototyper og skitser, hvor vi planlagde visuelle virkemidler og infografik til vores projekter.<br><br>
+        Herefter lærte vi at bruge Adobe Illustrator til at lave præcise grafiske elementer, som vi kunne eksportere og animere på vores websites.<br><br>
+        Vi fik en grundig introduktion til JavaScript og lærte at arbejde med variabler, betingelser, arrays og funktioner gennem øvelser, som vi løste både individuelt og i grupper.<br><br>
+        Derudover arbejdede vi med CSS-animationer og lærte teknikker til at tilføje animationer via klasser, hvilket gjorde vores sites mere interaktive og brugervenlige.<br><br>
+        Vi brugte også forskellige værktøjer til at skabe stilfulde designs, blandt andet Style Tiles og dark mode-designs, som vi kunne teste og justere ud fra brugernes feedback.<br><br>
+        Alt i alt var Tema 4 en spændende videreudvikling af vores digitale kompetencer, hvor vi kombinerede design og kode til at lave både visuelt flotte og teknisk avancerede websites.</p>
+        <a href="https://silenciocreative.dk/emergency/forside.html" target="_blank" class="Mobilsite">
+          <img src="img/gubbe.webp" alt="Medier thumbnail" class="mobilsite-img">
+          Åbn emergency-site
+        </a>
+    </div>
+  </div>
+
+<div class="popup-overlay hidden" id="popup5">
+  <div class="document-popup">
+    <button class="close-popup">×</button>
+      <h2>Tema 5 – Grundlæggende indhold</h2><br><br>
+      <p>I dette tema dykkede vi ned i grundlæggende indholdsproduktion med fokus på samarbejde i teams og udvikling af digitale løsninger.<br><br>
+        Vi startede med en introduktion til temaet, hvor samarbejdskontrakter og konceptudvikling blev centrale elementer.<br><br>
+        Vi arbejdede med konceptualisering af indhold og planlagde en "shoot"-dag til at skabe det visuelle materiale til vores projekter.<br><br>
+        Vi undersøgte procesdokumentation, kravspecifikationer og forskellige eksempler på websites og animerede hero-sektioner for inspiration.<br><br>
+        Vi fik introduktion til anvendelse af Lottie-animationer, som vi lærte at eksportere og implementere i vores projekter.<br><br>
+        Temaet indeholdt også praktiske opgaver med fokus på SCRUM-metodologi og heuristisk evaluering af vores løsninger.<br><br>
+        Til sidst reflekterede vi over vores arbejde gennem evalueringer og eksperimenter med præsentationsteknikker.<br><br>
+        Alt i alt lærte vi, hvordan man arbejder professionelt med indholdsproduktion, samarbejde og digital udvikling.</p>
+           <a href="https://silenciocreative.dk/WEAREART/" target="_blank" class="Mobilsite">
+          <img src="img/lottie.png" alt="Medier thumbnail" class="mobilsite-img">
+          Åbn lottie-site
+        </a>
+        <a href="https://silenciocreative.dk/medier/medier.html" target="_blank" class="Mobilsite">
+          <img src="img/soelve.webp" alt="Medier thumbnail" class="mobilsite-img">
+          Åbn mediesite
+        </a>
+  </div>
+</div>
+
+<div class="dock-panel" id="dockPanel">
+  <div class="dock-icon" aria-label=" Visual Studio Code: Værktøj til at dygtiggøre mig inden for kode i HTML og CSS.">
+    <img src="img/vscode.png" alt="Visual Studio">
+  </div>
+  <div class="dock-icon" aria-label="Adobe After Effects: Værktøj til at producere animationer.">
+    <img src="img/ae.png" alt="After Effects">
+  </div>
+  <div class="dock-icon" aria-label="Adobe Photoshop: Værktøj til at redigere billeder og justere farver.">
+    <img src="img/ps.png" alt="Photoshop">
+  </div>
+  <div class="dock-icon" aria-label="FileZilla: Platform til at uploade mine filer til webserveren.">
+    <img src="img/fz.png" alt="FileZilla">
+  </div>
+  <div class="dock-icon" aria-label="Adobe Illustrator: Værktøj til skabelse af grafiske illustrationer, SVG’er og logo-designs.">
+    <img src="img/ai.png" alt="Illustrator">
+  </div>
+  <div class="dock-icon" aria-label="itslearning: Platformen jeg afleverede mine projekter via.">
+    <img src="img/its.png" alt="ITS Learning">
+  </div> 
+  <div class="dock-icon" aria-label="Figma: Brugt til wireframes, style tiles og visuelle udkast undervejs i designprocessen.">
+    <img src="img/figma.png" alt="Figma">
+  </div>
+  <div class="dock-icon" aria-label="Papirkurv: Brugt til slettede, gamle versioner og filer.">
+    <img src="img/trashcan.png" alt="Papirkurv">
+  </div>
+</div>
+</main>
+<script src="js/portfolio.js"></script>
+</body>
+</html>
